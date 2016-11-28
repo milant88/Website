@@ -1,0 +1,294 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/* GLOBALS & MIXINS */
+@font-face { font-family: 'Museo100'; src: url("../fonts/museo_100.ttf"); }
+@font-face { font-family: 'Museo300'; src: url("../fonts/museo_300.ttf"); }
+@font-face { font-family: 'Museo500'; src: url("../fonts/museo_500.ttf"); }
+@font-face { font-family: 'Museo700'; src: url("../fonts/museo_700.ttf"); }
+@font-face { font-family: 'Museo900'; src: url("../fonts/museo_900.ttf"); }
+/* line 43, ../sass/style.scss */
+h1 { font-size: 60px; font-family: 'Museo100'; color: white; }
+
+/* line 49, ../sass/style.scss */
+h2 { font-size: 50px; font-family: 'Museo100'; color: #081f3f; }
+
+/* line 55, ../sass/style.scss */
+body { background-color: #ccc; margin: 0 auto; }
+
+/* line 60, ../sass/style.scss */
+* { box-sizing: border-box; }
+
+/* line 64, ../sass/style.scss */
+.left { float: left !important; }
+
+/* line 67, ../sass/style.scss */
+.right { float: right !important; }
+
+/* line 71, ../sass/style.scss */
+.button { width: 155px; height: 40px; border-radius: 20px; background-color: white; font-size: 16px; font-family: 'Museo700'; line-height: 40px; cursor: pointer; text-align: center; margin: 0 auto; color: #004ffb; }
+
+/* line 85, ../sass/style.scss */
+.button.signup { border: 2px solid #004ffb; padding: 0px 15px 0px 10px; line-height: 37px; }
+
+/* line 90, ../sass/style.scss */
+.button.signup:hover { border-color: #081f3f; color: #081f3f; }
+
+/* line 95, ../sass/style.scss */
+.button.read { width: 192px; padding: 0px 15px 0px 10px; }
+
+/* line 100, ../sass/style.scss */
+.button.read:hover { background-color: #e6eeff; }
+
+/* line 104, ../sass/style.scss */
+.logo { width: 158px; height: 31px; background-image: url(../images/logo.png); }
+
+/* !GLOBALS & MIXINS */
+/* line 113, ../sass/style.scss */
+.wrapper { position: absolute; width: 1640px; left: 50%; margin-left: -820px; background-color: white; }
+/* line 120, ../sass/style.scss */
+.wrapper .login-signup { width: 168px; height: 40px; position: relative; float: right; }
+/* line 128, ../sass/style.scss */
+.wrapper .login-signup .login, .wrapper .login-signup .signup { width: 82px; height: 100%; float: left; background-color: #0050ff; color: white; font-size: 14px; font-family: 'Museo700'; text-align: center; line-height: 2.8; cursor: pointer; }
+/* line 141, ../sass/style.scss */
+.wrapper .login-signup .login:hover, .wrapper .login-signup .signup:hover { background-color: #0040cc; }
+/* line 145, ../sass/style.scss */
+.wrapper .login-signup .login { border-right: 2px solid white; border-top-left-radius: 20px; border-bottom-left-radius: 20px; }
+/* line 150, ../sass/style.scss */
+.wrapper .login-signup .signup { border-top-right-radius: 20px; border-bottom-right-radius: 20px; }
+/* line 156, ../sass/style.scss */
+.wrapper .header { width: 100%; height: 140px; background-color: white; padding-left: 230px; padding-right: 230px; }
+/* line 162, ../sass/style.scss */
+.wrapper .header .user-type-nav { list-style: none; float: right; }
+/* line 166, ../sass/style.scss */
+.wrapper .header .user-type-nav li { display: block; float: right; padding-left: 25px; }
+/* line 170, ../sass/style.scss */
+.wrapper .header .user-type-nav li a { text-decoration: none; font-size: 14px; color: #081f3f; font-family: 'Museo300'; line-height: 2; margin-top: 15px; display: block; width: 100%; height: 100%; }
+/* line 181, ../sass/style.scss */
+.wrapper .header .user-type-nav li a:hover { color: #0050ff; }
+/* line 187, ../sass/style.scss */
+.wrapper .header .logo { float: left; margin-top: 55px; }
+/* line 192, ../sass/style.scss */
+.wrapper .header .main-nav { list-style: none; height: 100%; width: 420px; margin: 0 auto; }
+/* line 197, ../sass/style.scss */
+.wrapper .header .main-nav li { display: block; width: 25%; height: 100%; float: left; }
+/* line 202, ../sass/style.scss */
+.wrapper .header .main-nav li a { text-decoration: none; display: block; font-size: 18px; color: #081f3f; font-family: 'Museo700'; text-align: center; width: 100%; height: 100%; line-height: 2; padding-top: 65px; }
+/* line 214, ../sass/style.scss */
+.wrapper .header .main-nav li a:hover { border-bottom: 5px solid #0050ff; }
+/* line 219, ../sass/style.scss */
+.wrapper .header .login-signup { top: -75px; }
+/* line 225, ../sass/style.scss */
+.wrapper .slideshow { width: 1640px; height: 482px; background-image: url(../images/family.png); padding-top: 114px; }
+/* line 231, ../sass/style.scss */
+.wrapper .slideshow * { margin: 0 auto; text-align: center; color: white; }
+/* line 236, ../sass/style.scss */
+.wrapper .slideshow .icon { width: 80px; height: 80px; background-image: url(../images/icon_people.png); margin-bottom: 28px; }
+/* line 242, ../sass/style.scss */
+.wrapper .slideshow .info { width: 600px; font-size: 22px; font-family: 'Museo300'; margin-top: 34px; line-height: 1.7; }
+/* line 252, ../sass/style.scss */
+.wrapper .features { width: 1640px; height: 220px; padding-left: 230px; padding-right: 230px; background-color: #fafafa; padding-top: 43px; }
+/* line 258, ../sass/style.scss */
+.wrapper .features .blurb { width: 25%; height: 100%; color: #081f3f; font-family: 'Museo300'; font-size: 18px; float: left; }
+/* line 265, ../sass/style.scss */
+.wrapper .features .blurb * { margin: 0 auto; }
+/* line 269, ../sass/style.scss */
+.wrapper .features .blurb .info { text-align: center; text-shadow: 0px 9px 130.5px rgba(0, 0, 0, 0.1); -moz-transform: matrix(1.12772, 0, 0, 1.12772, 0, 0); -webkit-transform: matrix(1.12772, 0, 0, 1.12772, 0, 0); -ms-transform: matrix(1.12772, 0, 0, 1.12772, 0, 0); line-height: 1.667; }
+/* line 279, ../sass/style.scss */
+.wrapper .features .blurb .person, .wrapper .features .blurb .camera, .wrapper .features .blurb .book, .wrapper .features .blurb .pills { background-image: url(../images/sprite_icons.png); background-repeat: no-repeat; width: 53px; height: 53px; margin-bottom: 15px; }
+/* line 286, ../sass/style.scss */
+.wrapper .features .blurb .camera { background-position: -53px 0px; }
+/* line 289, ../sass/style.scss */
+.wrapper .features .blurb .book { background-position: -106px 0px; }
+/* line 292, ../sass/style.scss */
+.wrapper .features .blurb .pills { background-position: -159px 0px; }
+/* line 298, ../sass/style.scss */
+.wrapper .prices { width: 1640px; height: 907px; padding-top: 48px; border-bottom: 1px solid #d9d9d9; }
+/* line 303, ../sass/style.scss */
+.wrapper .prices ul.tabs { list-style: none; border-bottom: 1px solid #d9d9d9; width: 100%; height: 93px; z-index: 1; padding-left: 226px; }
+/* line 312, ../sass/style.scss */
+.wrapper .prices ul.tabs li { display: block; width: 588px; height: 100%; background-color: #f6f6f6; border: 1px solid #d9d9d9; border-bottom: none; border-top-left-radius: 10px; border-top-right-radius: 10px; float: left; text-align: center; }
+/* line 323, ../sass/style.scss */
+.wrapper .prices ul.tabs li a { font-size: 26px; font-family: 'Museo300'; color: #081f3f; display: block; width: 100%; height: 100%; line-height: 93px; text-decoration: none; cursor: pointer; }
+/* line 335, ../sass/style.scss */
+.wrapper .prices ul.tabs li.ui-state-active { background-color: white; z-index: 2; height: 93px; }
+/* line 340, ../sass/style.scss */
+.wrapper .prices ul.tabs li:first-child { margin-right: 6px; }
+/* line 343, ../sass/style.scss */
+.wrapper .prices ul.tabs li:hover, .wrapper .prices ul.tabs li:focus { background-color: white; z-index: 2; height: 93px; }
+/* line 348, ../sass/style.scss */
+.wrapper .prices ul.tabs a:hover, .wrapper .prices ul.tabs a:focus { color: #0050ff; }
+/* line 351, ../sass/style.scss */
+.wrapper .prices ul.tabs a:focus { outline: none; }
+/* line 356, ../sass/style.scss */
+.wrapper .prices .prices-content { width: 100%; padding-left: 230px; padding-right: 230px; padding-top: 102px; }
+/* line 361, ../sass/style.scss */
+.wrapper .prices .prices-content .price { width: 377px; height: 475px; background-color: white; border-radius: 10px; box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.2); margin: 0 auto; position: absolute; z-index: 1; }
+/* line 371, ../sass/style.scss */
+.wrapper .prices .prices-content .price .title { width: 100%; height: 79px; line-height: 79px; background-color: #0050ff; border-top-left-radius: inherit; border-top-right-radius: inherit; text-align: center; font-family: 'Museo700'; font-size: 18px; color: white; }
+/* line 384, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content { width: 100%; height: 400px; padding-top: 50px; }
+/* line 388, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content * { margin: 0 auto; text-align: center; }
+/* line 392, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content .value-wrap { width: 100%; height: 50px; padding-left: 127px; }
+/* line 397, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content .value-wrap * { float: left; }
+/* line 401, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content .value { font-size: 60px; font-family: 'Museo100'; color: #0050ff; line-height: 0.8; }
+/* line 407, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content .value-info { margin-left: 5px; width: 60px; font-size: 16px; font-family: 'Museo300'; color: #0050ff; text-align: left; line-height: 1.6; }
+/* line 416, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content .min { font-size: 16px; font-family: 'Museo700'; color: #081f3f; margin-top: 17px; }
+/* line 422, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans { list-style: none; width: 100%; height: 230px; padding-left: 46px; margin-top: 30px; }
+/* line 428, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans li { display: block; width: 100%; float: left; margin-bottom: 28px; }
+/* line 433, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans li * { float: left; }
+/* line 436, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans li .icon { background-image: url(../images/icons.png); }
+/* line 439, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans li .icon.checked { width: 15px; height: 11px; margin-right: 27px; margin-top: 3px; }
+/* line 445, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans li .icon.x { width: 10px; height: 10px; background-position: -17px 0px; margin: 3px 30px 0px 2px; }
+/* line 451, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans li .text { font-size: 16px; font-family: 'Museo300'; color: #081f3f; text-align: left; }
+/* line 457, ../sass/style.scss */
+.wrapper .prices .prices-content .price .content ul.plans li .text.disabled { color: #d5d6da; }
+/* line 464, ../sass/style.scss */
+.wrapper .prices .prices-content .price.bestbuy { width: 438px; height: 516px; left: 50%; margin-left: -219px; top: 1065px; z-index: 2; }
+/* line 471, ../sass/style.scss */
+.wrapper .prices .prices-content .price.bestbuy .title { background-color: #2dc27a; height: 90px; line-height: 90px; }
+/* line 476, ../sass/style.scss */
+.wrapper .prices .prices-content .price.bestbuy .bestvalue { width: 156px; height: 80px; position: relative; background-image: url(../images/flag.png); font-size: 18px; font-family: 'Museo700'; color: white; line-height: 53px; text-align: center; top: -27px; left: -52px; }
+/* line 489, ../sass/style.scss */
+.wrapper .prices .prices-content .price.bestbuy .content { padding-top: 60px; position: relative; top: -70px; }
+/* line 495, ../sass/style.scss */
+.wrapper .prices .prices-content .price.rightside { right: 230px; }
+/* line 499, ../sass/style.scss */
+.wrapper .prices .button.signup { position: relative; top: 560px; }
+/* line 505, ../sass/style.scss */
+.wrapper .user-story { width: 100%; height: 650px; background-color: #004ffb; }
+/* line 509, ../sass/style.scss */
+.wrapper .user-story .story { width: 50%; height: 100%; float: left; color: white; padding-top: 165px; }
+/* line 515, ../sass/style.scss */
+.wrapper .user-story .story * { margin: 0 auto; }
+/* line 518, ../sass/style.scss */
+.wrapper .user-story .story .title { font-size: 20px; font-family: 'Museo300'; text-align: center; margin-bottom: 16px; }
+/* line 524, ../sass/style.scss */
+.wrapper .user-story .story .info { font-size: 50px; font-family: 'Museo100'; text-align: center; width: 700px; line-height: 1.2; margin-bottom: 47px; }
+/* line 533, ../sass/style.scss */
+.wrapper .user-story .pic { width: 50%; height: 100%; float: left; background-image: url(../images/man.png); }
+/* line 540, ../sass/style.scss */
+.wrapper .faq { width: 100%; padding-left: 230px; padding-right: 230px; padding-top: 50px; }
+/* line 544, ../sass/style.scss */
+.wrapper .faq h2 { text-align: center; }
+/* line 548, ../sass/style.scss */
+.wrapper .faq .faq-list { width: 100%; height: auto; border: 1px solid #e4e3e3; border-radius: 10px; margin-top: 50px; margin-bottom: 60px; }
+/* line 556, ../sass/style.scss */
+.wrapper .faq .faq-list .question { width: 100%; height: 68px; line-height: 68px; text-align: center; font-size: 18px; font-family: 'Museo700'; color: #0050ff; border: 1px solid #e4e3e3; cursor: pointer; padding-left: 43px; }
+/* line 567, ../sass/style.scss */
+.wrapper .faq .faq-list .question .close { background-image: url(../images/faq_close.png); width: 17px; height: 10px; margin-top: 28px; margin-right: 26px; float: right; }
+/* line 575, ../sass/style.scss */
+.wrapper .faq .faq-list .question .close.open { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+/* line 581, ../sass/style.scss */
+.wrapper .faq .faq-list .faq-answer { width: 100%; height: 0px; overflow: hidden; position: relative; border: 1px solid #e4e3e3; padding: 50px 80px 30px 80px; }
+/* line 588, ../sass/style.scss */
+.wrapper .faq .faq-list .faq-answer ul { list-style-image: url(../images/bulletpoint.gif); font-size: 18px; font-family: 'Museo700'; line-height: 1.6; margin-left: 10px; }
+/* line 594, ../sass/style.scss */
+.wrapper .faq .faq-list .faq-answer ul li { padding-left: 15px; margin-bottom: 15px; }
+/* line 598, ../sass/style.scss */
+.wrapper .faq .faq-list .faq-answer ul li:last-child { margin-bottom: 0px; }
+/* line 602, ../sass/style.scss */
+.wrapper .faq .faq-list .faq-answer p { margin-top: 47px; margin-bottom: 10px; font-size: 18px; font-family: 'Museo300'; color: #081f3f; line-height: 1.6; }
+/* line 610, ../sass/style.scss */
+.wrapper .faq .faq-list .faq-answer p:first-child { margin-top: 0px; }
+/* line 614, ../sass/style.scss */
+.wrapper .faq .faq-list .question:first-child { border-top-left-radius: 9px; border-top-right-radius: 9px; }
+/* line 618, ../sass/style.scss */
+.wrapper .faq .faq-list .question.last, .wrapper .faq .faq-list .faq-answer.last { border-bottom-left-radius: 9px; border-bottom-right-radius: 9px; }
+/* line 623, ../sass/style.scss */
+.wrapper .faq .button.faqbtn { width: 226px; border: 2px solid #004ffb; padding: 0px 15px 0px 10px; line-height: 37px; margin-bottom: 65px; }
+/* line 630, ../sass/style.scss */
+.wrapper .faq .button.faqbtn:hover { border-color: #081f3f; color: #081f3f; }
+/* line 635, ../sass/style.scss */
+.wrapper .bottom-nav { width: 100%; height: 160px; }
+/* line 639, ../sass/style.scss */
+.wrapper .bottom-nav .appointments, .wrapper .bottom-nav .whatwedo, .wrapper .bottom-nav .perscriptions { background-color: #004ffb; cursor: pointer; float: left; font-size: 30px; font-family: 'Museo100'; color: white; line-height: 160px; text-align: center; }
+/* line 649, ../sass/style.scss */
+.wrapper .bottom-nav .appointments:hover, .wrapper .bottom-nav .whatwedo:hover, .wrapper .bottom-nav .perscriptions:hover { background-color: #0040cc; }
+/* line 652, ../sass/style.scss */
+.wrapper .bottom-nav .appointments { width: 610px; height: 100%; }
+/* line 657, ../sass/style.scss */
+.wrapper .bottom-nav .whatwedo { width: 421px; height: 100%; border-left: 1px solid #0037af; border-right: 1px solid #0037af; }
+/* line 663, ../sass/style.scss */
+.wrapper .bottom-nav .perscriptions { width: 609px; height: 100%; }
+/* line 667, ../sass/style.scss */
+.wrapper .bottom-nav .img { margin: 0px 15px 0px 15px; position: relative; top: 5px; }
+/* line 673, ../sass/style.scss */
+.wrapper .footer-content { width: 100%; padding-left: 230px; padding-right: 230px; height: auto; padding-top: 70px; }
+/* line 679, ../sass/style.scss */
+.wrapper .footer-content .part1 { width: 280px; float: left; }
+/* line 683, ../sass/style.scss */
+.wrapper .footer-content .part2 { float: left; }
+/* line 686, ../sass/style.scss */
+.wrapper .footer-content .part3 { width: 200px; float: right; }
+/* line 689, ../sass/style.scss */
+.wrapper .footer-content .part3 .login-signup { margin-bottom: 86px; margin-top: 10px; }
+/* line 693, ../sass/style.scss */
+.wrapper .footer-content .part3 img { cursor: pointer; float: right; margin-bottom: 10px; }
+/* line 700, ../sass/style.scss */
+.wrapper .footer-content .footer-list { float: left; font-size: 16px; font-family: 'Museo500'; color: #0050ff; margin: 10px 125px 0px 0px; }
+/* line 706, ../sass/style.scss */
+.wrapper .footer-content .footer-list .title { color: #081f3f; font-size: 14px; font-family: 'Museo500'; margin-bottom: 20px; }
+/* line 712, ../sass/style.scss */
+.wrapper .footer-content .footer-list li { margin-bottom: 14px; }
+/* line 716, ../sass/style.scss */
+.wrapper .footer-content .footer-list a { text-decoration: none; font-size: 16px; font-family: 'Museo500'; color: #0050ff; line-height: 1.5; }
+/* line 723, ../sass/style.scss */
+.wrapper .footer-content .footer-list li.dotted { list-style-image: url(../images/bulletpoint.gif); }
+/* line 725, ../sass/style.scss */
+.wrapper .footer-content .footer-list li.dotted a { color: #081f3f; }
+/* line 731, ../sass/style.scss */
+.wrapper .footer { margin-top: 50px; padding-left: 230px; padding-right: 230px; width: 100%; height: 80px; float: left; background-color: #f7f7f7; }
+/* line 739, ../sass/style.scss */
+.wrapper .footer .terms { font-family: 'Droid Sans', sans-serif; font-size: 14px; color: #0050ff; float: left; line-height: 80px; }
+/* line 745, ../sass/style.scss */
+.wrapper .footer .terms .plus { color: #808b9b; margin: 0px 5px; }
+/* line 749, ../sass/style.scss */
+.wrapper .footer .terms * { float: left; }
+/* line 754, ../sass/style.scss */
+.wrapper .footer .social { float: right; padding-top: 40px; }
+/* line 757, ../sass/style.scss */
+.wrapper .footer .social * { float: right; }
+/* line 760, ../sass/style.scss */
+.wrapper .footer .social .facebook, .wrapper .footer .social .twitter, .wrapper .footer .social .youtube { width: 17px; height: 17px; background-image: url(../images/social.png); margin-left: 15px; }
+/* line 766, ../sass/style.scss */
+.wrapper .footer .social .twitter { background-position: -32px 0px; }
+/* line 769, ../sass/style.scss */
+.wrapper .footer .social .youtube { width: 20px; background-position: -63px 0px; }

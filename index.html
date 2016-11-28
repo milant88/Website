@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Milan Tomic - Test</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script>
+            $( function() {
+                $('#prices_tabs').tabs({active: '#prices_tabs-1'});
+                $("#prices_tabs").tabs();                
+            });
+            $( function() {
+                $('#faq li').each(function() {
+                    var tis = $(this), state = false, answer = tis.next('div').hide().css('height','auto').slideUp();
+                    tis.click(function() {
+                        state = !state;
+                        answer.slideToggle(state);
+                        tis.toggleClass('active',state);
+                    });
+                });
+                $('#faq li').click(function() {
+                    $(this).css('border-bottom-right-radius','0px');
+                    $(this).css('border-bottom-left-radius','0px');
+                    $(this).find('div').toggleClass('open');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo"></div>
+                <ul class="user-type-nav">
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Clinicians</a></li>
+                    <li><a href="#">Patients</a></li>
+                </ul>
+                <ul class="main-nav">
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="login-signup">
+                    <div class="login">Log in</div>
+                    <div class="signup">Sign up</div>
+                </div>
+            </div>
+            <div class="slideshow">
+                <div class="icon"></div>
+                <h1>Sed ut perspiciatis unde omnis iste nat</h1>
+                <div class="info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</div>
+            </div>
+            <div class="features">
+                <div class="blurb ">
+                    <div class="person"></div>
+                    <p class="info">Lorem ipsum dolor sit amet consectetuer adipiscing </p>
+                </div>
+                <div class="blurb ">
+                    <div class="camera"></div>
+                    <p class="info">Lorem ipsum dolor sit amet consectetuer adipiscing </p>
+                </div>
+                <div class="blurb ">
+                    <div class="book"></div>
+                    <p class="info">Lorem ipsum dolor sit amet consectetuer adipiscing </p>
+                </div>
+                <div class="blurb ">
+                    <div class="pills"></div>
+                    <p class="info">Lorem ipsum dolor sit amet consectetuer adipiscing </p>
+                </div>
+            </div>
+            <div class="prices" id="prices_tabs">
+                <ul class="tabs">
+                    <li><a href="#prices_tabs-1">Ipsum plans</a></li>
+                    <li><a href="#prices_tabs-2">Ipsum plans</a></li>
+                </ul>
+                <div class="prices-content" id="prices_tabs-1">
+                    <div class="price">
+                        <div class="title">Monthly plan</div>
+                        <div class="content">
+                            <div class="value-wrap">
+                                <div class="value">&#163;18</div>
+                                <div class="value-info">per month</div>
+                            </div>                           
+                            <div class="min">minimum 4 months</div>
+                            <ul class="plans">
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">Unlimited online appointments</div>
+                                </li>
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">Health tracking</div>
+                                </li>
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">NHS repeat prescriptions</div>
+                                </li>
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">2 free international appointments</div>
+                                </li>
+                                <li>
+                                    <div class="icon x"></div>
+                                    <div class="text disabled">Discounts for family members</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price bestbuy">
+                        <div class="title">Annual plan</div>
+                        <div class="bestvalue">BEST VALUE</div>
+                        <div class="content">
+                                <div class="value">&#163;180</div>                         
+                            <div class="min">save &#163;36 per year</div>
+                            <ul class="plans">
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">Unlimited online appointments</div>
+                                </li>
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">Health tracking</div>
+                                </li>
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">NHS repeat prescriptions</div>
+                                </li>
+                                <li>
+                                    <div class="icon checked"></div>
+                                    <div class="text">2 free international appointments</div>
+                                </li>
+                                <li>
+                                    <div class="icon x"></div>
+                                    <div class="text disabled">Discounts for family members</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price rightside">
+                        <div class="title">Pay as you go</div>
+                        <div class="content">
+                                <div class="value">&#163;75</div>                        
+                            <div class="min">Per appointment</div>
+                            <ul class="plans">
+                                <li>
+                                    <div class="icon x"></div>
+                                    <div class="text disabled">Unlimited online appointments</div>
+                                </li>
+                                <li>
+                                    <div class="icon x"></div>
+                                    <div class="text disabled">Health tracking</div>
+                                </li>
+                                <li>
+                                    <div class="icon x"></div>
+                                    <div class="text disabled">NHS repeat prescriptions</div>
+                                </li>
+                                <li>
+                                    <div class="icon x"></div>
+                                    <div class="text disabled">2 free international appointments</div>
+                                </li>
+                                <li>
+                                    <div class="icon x"></div>
+                                    <div class="text disabled">Discounts for family members</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="button signup">Sign up now <span class="right">></span></div>
+                </div>
+                <div class="prices-content" id="prices_tabs-2">
+                </div>
+            </div>            
+            <div class="user-story">
+                <div class="story">
+                    <div class="title">USER'S STORY</div>
+                    <div class="info">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy”</div>
+                    <div class="button read">Read user’s story <span class="right">></span></div>
+                </div>
+                <div class="pic"></div>
+            </div>
+            <div class="faq">
+                <h2>Lorem ipsum notes</h2>
+                <ul class="faq-list" id=faq>
+                    <li class="question">Who can use this device?<div class="close"></div></li>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                        <ul>
+                         <li>Lorem ipsum dolor sit amet</li>
+                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                    </div>
+                    <li class="question">How do the appointments work?<div class="close"></div></li>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                        <ul>
+                         <li>Lorem ipsum dolor sit amet</li>
+                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                    </div>
+                    <li class="question">How much does it cost?<div class="close"></div></li>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                        <ul>
+                         <li>Lorem ipsum dolor sit amet</li>
+                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                    </div>
+                    <li class="question last">What conditions do you treat?<div class="close"></div></li>
+                    <div class="faq-answer last">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                        <ul>
+                         <li>Lorem ipsum dolor sit amet</li>
+                            <li>Praesent et feugiat diam sit amet venenatis orci</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at condimentum ligula. Praesent et feugiat diam, sit amet venenatis orci. Pellentesque facilisis tincidunt porttitor. Mauris ligula ex, mattis id purus a, blandit aliquam justo. Nunc a lobortis.</p>
+                    </div>
+                </ul>
+                <div class="button faqbtn">Lorem Ipsum Notes <span class="right">></span></div>
+            </div>
+            <div class="bottom-nav">
+                <div class="appointments"><img class="img" src="images/arrow_l.png" width="26px" height="26px">Appointments</div>
+                <div class="whatwedo">What we do</div>
+                <div class="perscriptions">Perscriptions<img class="img" src="images/arrow_l.png" width="26px" height="26px"></div>
+            </div>
+            <div class="footer-content">
+                <div class="part1"><div class="logo"></div></div>
+                <div class="part2">
+                    <ul class="footer-list">
+                        <li class="title">OUR SITES</li>
+                        <li class="dotted"><a href="*">Patients</a></li>
+                        <li><a href="*">Clinicians</a></li>
+                        <li><a href="*">Business</a></li>
+                        <li><a href="*">Pharmacists</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="title">THE SERVICE</li>
+                        <li class="dotted"><a href="*">What we do</a></li>
+                        <li><a href="*">About us</a></li>
+                        <li><a href="*">Pricing</a></li>
+                        <li><a href="*">Contact</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="title">USEFUL LINKS</li>
+                        <li><a href="*">FAQs</a></li>
+                        <li><a href="*">User stories</a></li>
+                        <li><a href="*">Mobile apps</a></li>
+                        <li><a href="*">Media</a></li>
+                        <li><a href="*">International</a></li>
+                    </ul>
+                </div>
+                <div class="part3">
+                    <div class="login-signup">
+                        <div class="login">Log in</div>
+                        <div class="signup">Sign up</div>
+                    </div>
+                    <img src="images/appstore.png" alt="App Store">
+                    <img src="images/googleplay.png" alt="Google Play">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="terms">
+                    <div>Terms</div><div class="plus">+</div><div>Privacy</div>
+                </div>
+                <div class="social">
+                    <div class="youtube"></div>
+                    <div class="twitter"></div>
+                    <div class="facebook"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
